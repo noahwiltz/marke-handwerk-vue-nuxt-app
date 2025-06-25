@@ -9,8 +9,13 @@
       <NuxtLink to="/" class="text-lg text-white">Leistungen </NuxtLink>
       <NuxtLink to="/" class="text-lg text-white">Über mich </NuxtLink>
       <div>
-        <div class="bg-ci-primary rounded p-3">
-          <img src="/icons/call-icon.svg" alt="Call icon" />
+        <div class="flex items-center">
+          <div class="[background-color:#1D341A] rounded p-3">
+            <img src="/icons/call-icon.svg" alt="Call icon" />
+          </div>
+          <a class="text-white mx-4" href="tel:+491737943151"
+            >+49 173 / 7943151</a
+          >
         </div>
       </div>
     </nav>
