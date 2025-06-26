@@ -3,4 +3,5 @@
 <template>
   <HeroStage title="Dein Betrieb" subTitle="Lorem ipsum" />
   <IconCardStage />
+  <ContactCta />
 </template>
