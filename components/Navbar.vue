@@ -2,15 +2,15 @@
 
 <template>
   <div class="absolute w-full flex">
-    <img class="w-auto ms-24" src="/marke-handwerk-logo.svg" alt="Logo" />
+    <img class="w-auto ms-25" src="/marke-handwerk-logo.svg" alt="Logo" />
     <nav
-      class="relative flex w-full h-26 items-center space-x-20 bg-black/30 px-32"
+      class="relative flex w-full h-26 items-center space-x-20 bg-black/30 px-25"
     >
       <NuxtLink to="/" class="text-md text-white">Startseite </NuxtLink>
       <NuxtLink to="/" class="text-lg text-white">Deine Vorteile </NuxtLink>
       <NuxtLink to="/" class="text-lg text-white">Leistungen </NuxtLink>
       <NuxtLink to="/" class="text-lg text-white">Über mich </NuxtLink>
-      <div class="absolute right-32 flex items-center">
+      <div class="absolute right-25 flex items-center">
         <div class="[background-color:#1D341A] rounded p-3">
           <img src="/icons/call-icon.svg" alt="Call icon" />
         </div>
