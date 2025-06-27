@@ -7,10 +7,14 @@
       description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
     />
     <div class="flex space-x-4 mt-18">
-      <IconCard />
-      <IconCard />
-      <IconCard />
-      <IconCard />
+      <IconCard
+        title="Marken-Check-Up"
+        description="Wir schauen uns die
+      Substanz für deine Marke gemeinsam an. Los geht die Reise!"
+      />
+      <IconCard title="Markenimage" />
+      <IconCard title="Personalberatung" />
+      <IconCard title="Bla bla bla" />
     </div>
   </div>
 </template>
