@@ -12,9 +12,21 @@
         description="Wir schauen uns die
       Substanz für deine Marke gemeinsam an. Los geht die Reise!"
       />
-      <IconCard title="Markenimage" />
-      <IconCard title="Personalberatung" />
-      <IconCard title="Bla bla bla" />
+      <IconCard
+        title="Marken-Check-Up"
+        description="Wir schauen uns die
+      Substanz für deine Marke gemeinsam an. Los geht die Reise!"
+      />
+      <IconCard
+        title="Marken-Check-Up"
+        description="Wir schauen uns die
+      Substanz für deine Marke gemeinsam an. Los geht die Reise!"
+      />
+      <IconCard
+        title="Marken-Check-Up"
+        description="Wir schauen uns die
+      Substanz für deine Marke gemeinsam an. Los geht die Reise!"
+      />
     </div>
   </div>
 </template>

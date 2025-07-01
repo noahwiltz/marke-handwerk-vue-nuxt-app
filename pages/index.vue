@@ -5,4 +5,5 @@
   <IconCardStage />
   <ContactCta />
   <AboutMeStage />
+  <ImageTextBulletsStage />
 </template>
