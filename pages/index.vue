@@ -6,4 +6,6 @@
   <ContactCta />
   <AboutMeStage />
   <ImageTextBulletsStage />
+  <ImageCardStage />
+  <ContactForm />
 </template>
