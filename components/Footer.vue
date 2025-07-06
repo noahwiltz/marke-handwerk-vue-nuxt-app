@@ -7,7 +7,7 @@
     <div>
       <h2 class="text-3xl font-semibold">Hilfe und Kontakt</h2>
       <div
-        class="w-48 h-48 bg-cover bg-center mt-7"
+        class="w-48 h-48 bg-cover bg-center rounded mt-7"
         style="background-image: url('/images/hero-stage.png')"
       ></div>
       <p class="text-lg font-medium mt-5">Yannick Zabywalski</p>
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div>
-      <h2 class="text-3xl font-semibold">Du findest uns hier</h2>
+      <h2 class="text-3xl font-semibold">Sie finden mich hier</h2>
       <div class="flex gap-x-5">
         <div class="w-fit [background-color:#1D341A] rounded p-3 mt-5">
           <a href="mailto:info@marke-handwerk.de"

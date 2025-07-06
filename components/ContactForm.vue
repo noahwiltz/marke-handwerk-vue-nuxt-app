@@ -1,10 +1,15 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const position = ref("");
+</script>
 
 <template>
+  <div class="mb-10" id="contact"></div>
   <TitleDivider
     title="Kontakt aufnehmen"
-    subTitle="Erzähl mir was du brauchst"
-    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+    subTitle="Treten Sie mit mir in Kontakt für ein unverbindliches Kennenlernen!"
+    description="Ich melde mich schnellstmöglich bei Ihnen zurück und wir schauen gemeinsam welche Leistungen für Sie in Frage kommen."
   />
   <form>
     <div class="flex flex-row p-25 pt-18">
@@ -12,24 +17,36 @@
         class="w-full lg:w-1/2 [background-color:#1D341A] bg-ci-primary rounded-l-md p-18 pb-20"
       >
         <p class="text-2xl text-white font-medium mb-2">
-          Nenne mir <span class="font-semibold">Deine Kontaktdaten</span>
+          Geben Sie mir <span class="font-semibold">Ihre Kontaktdaten:</span>
         </p>
-        <InputField title="Schreibe hier deinen Firmennamen" />
+        <InputField title="Firmenname" required />
         <div class="flex gap-x-3">
           <InputField title="Vorname" width="w-1/2" />
-          <InputField title="Nachname" width="w-1/2" />
+          <InputField title="Nachname" width="w-1/2" required />
         </div>
-        <p class="text-2xl text-white font-medium mt-5 mb-2">
-          <span class="font-semibold">Wann </span>kann ich Dich am besten
+        <select
+          v-model="position"
+          class="w-full text-gray-400 placeholder:text-white placeholder:opacity-30 focus-visible:outline-gray-300 focus-visible:outline-1 [background-color:#142412] rounded p-3 mt-3"
+          id="company"
+        >
+          <option value="" hidden>Position Im Unternehmen</option>
+          <option value="Inhaber & Geschäftsführer">
+            Inhaber & Geschäftsführer
+          </option>
+          <option value="Geschäftsführer">Geschäftsführer</option>
+          <option value="Inhaber">Inhaber</option>
+        </select>
+        <!--p class="text-2xl text-white font-medium mt-5 mb-2">
+          <span class="font-semibold">Wann </span>kann ich Sie am besten
           erreichen?
         </p>
-        <InputField title="Wähle einen Tag und die passende Uhrzeit aus" />
+        <InputField title="Wähle einen Tag und die passende Uhrzeit aus" /-->
         <p class="text-2xl text-white font-medium mt-5 mb-2">
           <span class="font-semibold">Wie </span>kann ich Dich am besten
           erreichen?
         </p>
-        <InputField title="Gib deine Telefonnummer ein" type="tel" />
-        <InputField title="Deine E-Mail-Adresse" type="email" />
+        <InputField title="Telefonnummer" type="tel" />
+        <InputField title="Deine E-Mail-Adresse" type="email" required />
         <input
           type="submit"
           value="Anfrage absenden"
@@ -45,7 +62,7 @@
         ></div>
         <div class="flex flex-col jusitfy-center items-center mt-10">
           <p class="text-2xl font-semibold">Yannick Zabywalski</p>
-          <p class="text-xl font-normal">Dein Ansprechpartner</p>
+          <p class="text-xl font-normal">Ihr Ansprechpartner</p>
           <div class="ms-15">
             <div class="flex items-center mt-10">
               <div class="[background-color:#1D341A] rounded p-3">
