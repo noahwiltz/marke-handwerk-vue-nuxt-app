@@ -1,15 +1,15 @@
 <script setup></script>
 
 <template>
+  <TitleDivider
+    title="Kontakt aufnehmen"
+    subTitle="Erzähl mir was du brauchst"
+    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+  />
   <form>
-    <TitleDivider
-      title="Kontakt aufnehmen"
-      subTitle="Erzähl mir was du brauchst"
-      description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
-    />
-    <div class="flex p-25 pt-18">
+    <div class="flex flex-row p-25 pt-18">
       <div
-        class="w-1/2 [background-color:#1D341A] bg-ci-primary rounded-l-md p-18 pb-20"
+        class="w-full lg:w-1/2 [background-color:#1D341A] bg-ci-primary rounded-l-md p-18 pb-20"
       >
         <p class="text-2xl text-white font-medium mb-2">
           Nenne mir <span class="font-semibold">Deine Kontaktdaten</span>
@@ -40,7 +40,7 @@
         class="w-1/2 flex flex-col items-center [background-color:#EFEFEF] rounded-r-md p-20 pt-18"
       >
         <div
-          class="w-[400px] h-[300px] bg-cover bg-center rounded"
+          class="w-full max-w-[400px] h-[300px] bg-cover bg-center rounded"
           style="background-image: url('/images/hero-stage.png')"
         ></div>
         <div class="flex flex-col jusitfy-center items-center mt-10">

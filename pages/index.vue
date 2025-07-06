@@ -1,7 +1,10 @@
 <script setup></script>
 
 <template>
-  <HeroStage title="Dein Betrieb" subTitle="Lorem ipsum" />
+  <HeroStage
+    title="Strategieberatung"
+    subTitle="Für starke Marken im Handwerk"
+  />
   <IconCardStage />
   <ContactCta />
   <AboutMeStage />
