@@ -8,9 +8,9 @@ defineProps({
 </script>
 
 <template>
-  <div>
+  <div class="hover:scale-95 duration-300 ease-in-out">
     <div
-      class="max-w-[430px] h-[300px] bg-cover bg-center rounded-t"
+      class="max-w-[430px] h-[300px] bg-cover bg-center rounded"
       :style="`background-image: url('${image}')`"
     ></div>
     <div

@@ -31,7 +31,7 @@
       <h2 class="text-3xl font-semibold">Sie finden mich hier</h2>
       <div class="flex gap-x-5">
         <div class="w-fit [background-color:#1D341A] rounded p-3 mt-5">
-          <a href="mailto:info@marke-handwerk.de"
+          <a href="https://instagram.com/marke_handwerk" target="_blank"
             ><img src="/icons/call-icon.svg" alt="Call icon"
           /></a>
         </div>

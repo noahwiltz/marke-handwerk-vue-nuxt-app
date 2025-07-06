@@ -14,17 +14,17 @@
       <NuxtLink
         to="/"
         class="text-lg text-white hover:underline duration-300 ease-in-out"
-        >Deine Vorteile
-      </NuxtLink>
-      <NuxtLink
-        to="/"
-        class="text-lg text-white hover:underline duration-300 ease-in-out"
-        >Leistungen
+        >Markenversprechen
       </NuxtLink>
       <NuxtLink
         to="/"
         class="text-lg text-white hover:underline duration-300 ease-in-out"
         >Über mich
+      </NuxtLink>
+      <NuxtLink
+        to="/"
+        class="text-lg text-white hover:underline duration-300 ease-in-out"
+        >Leistungen
       </NuxtLink>
       <div class="absolute right-25 flex items-center">
         <div class="[background-color:#1D341A] rounded p-3">
