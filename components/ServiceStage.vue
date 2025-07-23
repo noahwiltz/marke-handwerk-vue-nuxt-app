@@ -37,7 +37,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="p-25">
+  <div class="sm:p-25 p-10">
     <TitleDivider
       title="Meine Leistungen"
       subTitle="Mit meiner Dienstleistung zu nachhaltigem Markenerfolg."
@@ -46,28 +46,28 @@ onMounted(() => {
 
     <div class="flex gap-3 mt-18 overflow-x-auto cursor-grab" ref="sliderRef">
       <ImageCard
-        image="/images/hero-stage.png"
+        image="/images/hero-stage.jpeg"
         title="Marken-Check-Up"
         description="Vermittlung eines generellen und korrekten Markenverständnisses. Beispiele für erfolgreiche Marken im Handwerk. <br><br>"
         link="awd"
         class="min-w-[350px] shrink-0"
       />
       <ImageCard
-        image="/images/hero-stage.png"
+        image="/images/hero-stage.jpeg"
         title="Markenstrategie-Entwicklung"
         description="Entwicklung von Brand Touchpoints. Festlegung von Markenkontaktpunkten und KPI's zur Markenerfolgsmessung. <br><br>"
         link="awd"
         class="min-w-[350px] shrink-0"
       />
       <ImageCard
-        image="/images/hero-stage.png"
+        image="/images/hero-stage.jpeg"
         title="Markenaufbau"
         description="Workshops zur Entwicklung Ihrer Markenidentität, die das Führungspersonal mit einbezieht. Ableitung von konkreten Maßnahmen."
         link="awd"
         class="min-w-[350px] shrink-0"
       />
       <ImageCard
-        image="/images/hero-stage.png"
+        image="/images/hero-stage.jpeg"
         title="Markenführung"
         description="Umsetzung der Markenstrategie. Führung der Marke an allen Brand Touchpoints entlang der Customer Journey. <br><br>"
         link="awd"

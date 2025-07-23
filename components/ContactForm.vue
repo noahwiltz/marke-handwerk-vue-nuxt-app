@@ -12,11 +12,11 @@ const position = ref("");
     description="Ich melde mich schnellstmöglich bei Ihnen zurück und wir schauen gemeinsam welche Leistungen für Sie in Frage kommen."
   />
   <form>
-    <div class="flex flex-row p-25 pt-18">
+    <div class="flex sm:flex-row flex-col sm:p-25 p-0 pt-18">
       <div
-        class="w-full lg:w-1/2 [background-color:#1D341A] bg-ci-primary rounded-l-md p-18 pb-20"
+        class="w-full lg:w-1/2 [background-color:#1D341A] bg-ci-primary rounded-l-md sm:p-18 p-10 pb-20"
       >
-        <p class="text-2xl text-white font-medium mb-2">
+        <p class="sm:text-2xl text-xl text-white font-medium mb-2">
           Geben Sie mir <span class="font-semibold">Ihre Kontaktdaten:</span>
         </p>
         <InputField title="Firmenname" required />
@@ -41,7 +41,7 @@ const position = ref("");
           erreichen?
         </p>
         <InputField title="Wähle einen Tag und die passende Uhrzeit aus" /-->
-        <p class="text-2xl text-white font-medium mt-5 mb-2">
+        <p class="sm:text-2xl text-xl text-white font-medium mt-5 mb-2">
           <span class="font-semibold">Wie </span>kann ich Dich am besten
           erreichen?
         </p>
@@ -50,31 +50,33 @@ const position = ref("");
         <input
           type="submit"
           value="Anfrage absenden"
-          class="block text-lg font-medium bg-white rounded cursor-pointer px-5 py-2 mx-auto mt-10"
+          class="block sm:text-lg text-base font-medium bg-white rounded cursor-pointer px-5 py-2 mx-auto mt-10"
         />
       </div>
       <div
-        class="w-1/2 flex flex-col items-center [background-color:#EFEFEF] rounded-r-md p-20 pt-18"
+        class="sm:w-1/2 w-full flex flex-col items-center [background-color:#EFEFEF] rounded-r-md p-20 pt-18"
       >
         <div
-          class="w-full max-w-[400px] h-[300px] bg-cover bg-center rounded"
-          style="background-image: url('/images/hero-stage.png')"
+          class="w-full max-w-[400px] sm:h-[400px] h-[330px] bg-cover bg-center rounded"
+          style="background-image: url('/images/about-me.jpeg')"
         ></div>
         <div class="flex flex-col jusitfy-center items-center mt-10">
-          <p class="text-2xl font-semibold">Yannick Zabywalski</p>
-          <p class="text-xl font-normal">Ihr Ansprechpartner</p>
+          <p class="sm:text-2xl text-xl font-semibold">Yannick Zabywalski</p>
+          <p class="sm:text-xl text-lg font-normal">Ihr Ansprechpartner</p>
           <div class="ms-15">
             <div class="flex items-center mt-10">
-              <div class="[background-color:#1D341A] rounded p-3">
-                <img src="/icons/call-icon.svg" alt="Call icon" />
+              <div class="[background-color:#1D341A] rounded sm:p-3 p-2">
+                <img class="w-5" src="/icons/call-icon.svg" alt="Call icon" />
               </div>
-              <a class="mx-4" href="tel:+491737943151">+49 173 / 7943151</a>
+              <a class="text-base mx-4" href="tel:+491737943151"
+                >+49 173 / 7943151</a
+              >
             </div>
             <div class="flex items-center mt-5">
-              <div class="[background-color:#1D341A] rounded p-3">
-                <img src="/icons/call-icon.svg" alt="Call icon" />
+              <div class="[background-color:#1D341A] rounded sm:p-3 p-2">
+                <img class="w-5" src="/icons/call-icon.svg" alt="Call icon" />
               </div>
-              <a class="mx-4" href="mailto:info@marke-handwerk.de"
+              <a class="text-base mx-4" href="mailto:info@marke-handwerk.de"
                 >info@marke-handwerk.de</a
               >
             </div>
