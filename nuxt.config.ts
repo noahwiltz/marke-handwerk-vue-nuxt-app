@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  ssr: false, // ← Deaktiviert Server-Side-Rendering = statisch
   app: {
     head: {
       meta: [

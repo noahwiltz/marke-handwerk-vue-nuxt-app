@@ -21,12 +21,19 @@ defineProps({
         v-html="description"
         class="max-w-96 sm:text-xl text-base font-extralight text-center mt-10"
       ></p>
-      <a
+      <!--a
         class="sm:text-xl text-lg font-medium underline mt-12"
         v-if="link"
         :href="link"
         >Mehr erfahren</a
-      >
+  -->
+      <div class="relative w-fit group mx-auto mt-10">
+        <div
+          class="text-sm text-gray-500 group-hover:opacity-100 opacity-70 transition-opacity duration-300"
+        >
+          ↔️ Zum Swipen wischen
+        </div>
+      </div>
     </div>
   </div>
 </template>

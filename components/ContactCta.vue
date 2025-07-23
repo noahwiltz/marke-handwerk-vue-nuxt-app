@@ -2,7 +2,9 @@
 
 <template>
   <div class="flex flex-col justify-center items-center mt-18">
-    <h2 class="sm:text-5xl text-3xl [color:#1D341A] font-semibold">
+    <h2
+      class="sm:text-5xl text-2xl [color:#1D341A] font-semibold text-center mx-5"
+    >
       Kostenloses Erstgespräch
     </h2>
     <p class="text-center sm:text-xl text-base font-extralight px-10 mt-5">

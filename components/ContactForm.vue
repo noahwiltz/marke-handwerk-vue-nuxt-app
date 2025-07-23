@@ -5,14 +5,14 @@ const position = ref("");
 </script>
 
 <template>
-  <div class="mb-10" id="contact"></div>
+  <div class="mb-10" id="kontakt"></div>
   <TitleDivider
     title="Kontakt aufnehmen"
     subTitle="Treten Sie mit mir in Kontakt für ein unverbindliches Kennenlernen!"
     description="Ich melde mich schnellstmöglich bei Ihnen zurück und wir schauen gemeinsam welche Leistungen für Sie in Frage kommen."
   />
   <form>
-    <div class="flex sm:flex-row flex-col sm:p-25 p-0 pt-18">
+    <div class="flex sm:p-25 p-0 pt-18" id="form-container">
       <div
         class="w-full lg:w-1/2 [background-color:#1D341A] bg-ci-primary rounded-l-md sm:p-18 p-10 pb-20"
       >
@@ -86,3 +86,11 @@ const position = ref("");
     </div>
   </form>
 </template>
+
+<style>
+@media screen and (max-width: 1300px) {
+  #form-container {
+    flex-direction: column;
+  }
+}
+</style>

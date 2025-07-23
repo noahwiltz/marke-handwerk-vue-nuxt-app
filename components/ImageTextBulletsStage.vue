@@ -8,6 +8,7 @@ defineProps({
 </script>
 
 <template>
+  <div class="mb-10" id="ueber-mich"></div>
   <div class="flex px-10 mt-30" id="image-text-bullets-container">
     <div
       class="sm:w-1/2 w-full sm:h-210 h-100 bg-cover bg-center rounded-lg"

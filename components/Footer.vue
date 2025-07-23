@@ -2,7 +2,8 @@
 
 <template>
   <div
-    class="w-full flex sm:flex-row flex-col justify-between items-start [background-color:#EFEFEF] pt-10 sm:px-25 p-10 pb-18"
+    class="w-full flex justify-between items-start [background-color:#EFEFEF] pt-10 sm:px-25 p-10 pb-18"
+    id="footer-container"
   >
     <div>
       <h2 class="sm:text-3xl text-2xl font-semibold">Hilfe und Kontakt</h2>
@@ -28,7 +29,7 @@
       </div>
     </div>
     <div>
-      <h2 class="sm:text-3xl text-2xl font-semibold sm:mt-0 mt-10">
+      <h2 class="sm:text-3xl text-2xl font-semibold xl:mt-0 mt-10">
         Sie finden mich hier
       </h2>
       <div class="flex gap-x-5">
@@ -45,7 +46,7 @@
       </div>
     </div>
     <div>
-      <h2 class="sm:text-3xl text-2xl font-semibold sm:mt-0 mt-10">
+      <h2 class="sm:text-3xl text-2xl font-semibold xl:mt-0 mt-10">
         Leistungen
       </h2>
       <p class="text-base mt-5">Marken-Check-Up</p>
@@ -55,7 +56,7 @@
       <p class="text-base mt-5">Lorem ipsum</p>
     </div>
     <div>
-      <h2 class="text-3xl font-semibold sm:mt-0 mt-10">Sitemap</h2>
+      <h2 class="text-3xl font-semibold xl:mt-0 mt-10">Sitemap</h2>
       <p class="text-base mt-5">Startseite</p>
       <p class="text-base mt-5">Leistungen</p>
       <p class="text-base mt-5">Über mich</p>
@@ -64,3 +65,11 @@
     </div>
   </div>
 </template>
+
+<style>
+@media screen and (max-width: 1280px) {
+  #footer-container {
+    flex-direction: column;
+  }
+}
+</style>

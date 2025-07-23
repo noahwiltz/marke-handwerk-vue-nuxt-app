@@ -7,7 +7,7 @@ const menuOpen = ref(false);
 <template>
   <div class="flex absolute w-full">
     <img
-      class="sm:w-auto w-35 lg:ms-25 m-0"
+      class="sm:w-auto w-35 lg:ms-25 m-0 z-100"
       src="/marke-handwerk-logo.svg"
       alt="Logo"
     />
@@ -74,12 +74,16 @@ const menuOpen = ref(false);
   <transition name="fade">
     <div
       v-if="menuOpen"
-      class="absolute left-0 w-full h-full [background-color:#1D341A]/95 text-white flex flex-col items-start px-25 py-10 space-y-4 top-0 md:hidden"
+      class="absolute w-full h-full [background-color:#1D341A]/90 text-white flex flex-col items-center justify-start space-y-4 top-0 pt-30 md:hidden transition-all ease-in-out delay-300"
     >
       <NuxtLink to="/" @click="menuOpen = false">Startseite</NuxtLink>
-      <NuxtLink to="/" @click="menuOpen = false">Markenversprechen</NuxtLink>
-      <NuxtLink to="/" @click="menuOpen = false">Über mich</NuxtLink>
-      <NuxtLink to="/" @click="menuOpen = false">Leistungen</NuxtLink>
+      <NuxtLink to="/#markenversprechen" @click="menuOpen = false"
+        >Markenversprechen</NuxtLink
+      >
+      <NuxtLink to="/#ueber-mich" @click="menuOpen = false">Über mich</NuxtLink>
+      <NuxtLink to="/#leistungen" @click="menuOpen = false"
+        >Leistungen</NuxtLink
+      >
       <div class="flex items-center space-x-3 mt-4">
         <div class="bg-ci-primary rounded p-2">
           <img src="/icons/call-icon.svg" alt="Call icon" />
@@ -87,8 +91,9 @@ const menuOpen = ref(false);
         <a href="tel:+491737943151">+49 173 / 7943151</a>
       </div>
       <NuxtLink
-        to="/#contact"
+        to="/#kontakt"
         class="bg-ci-primary px-4 py-2 rounded mt-2 uppercase"
+        @click="menuOpen = false"
         >Kontakt</NuxtLink
       >
     </div>
@@ -100,5 +105,20 @@ const menuOpen = ref(false);
   #nav-desktop {
     display: none;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
