@@ -18,7 +18,7 @@ defineProps({
     <!-- Text mit hohem z-Index -->
     <div class="relative z-20">
       <h1
-        class="xl:text-8xl md:text-5xl text-3xl uppercase text-white font-semibold"
+        class="xl:text-8xl md:text-5xl text-2xl uppercase text-white font-semibold"
       >
         {{ title }}
       </h1>

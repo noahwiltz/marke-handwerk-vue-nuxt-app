@@ -53,28 +53,28 @@ onMounted(() => {
     </div>
     <div class="flex gap-3 mt-18 overflow-x-auto cursor-grab" ref="sliderRef">
       <ImageCard
-        image="/images/hero-stage.jpeg"
+        image="/images/services/marken-checkup.png"
         title="Marken-Check-Up"
         description="<br>Vermittlung eines generellen und korrekten Markenverständnisses. Beispiele für erfolgreiche Marken im Handwerk. <br><br>"
         link="awd"
         class="min-w-[350px] shrink-0"
       />
       <ImageCard
-        image="/images/hero-stage.jpeg"
+        image="/images/services/markenstrategie-entwicklung.png"
         title="Markenstrategie-Entwicklung"
         description="<li>Brand Touchpoints / Markenkontaktpunkte</li><li>Markenkern</li><li>Markenwerte</li><li>Markenpersönlichkeit</li><br>Entwicklung von Markenkontaktpunkten an denen Kunden mit Ihrer Marke in Berührung kommen können und sollen. Ableitung von Markenkern, werten und persönlichkeit. Sowie die Festlegung von Kennzahlen zur späteren Markenerfolgsmessung"
         link="awd"
         class="min-w-[350px] shrink-0"
       />
       <ImageCard
-        image="/images/hero-stage.jpeg"
+        image="/images/services/markenaufbau.png"
         title="Markenaufbau"
         description="Workshops zur Entwicklung Ihrer Markenidentität, die das Führungspersonal mit einbezieht. Ableitung von konkreten Maßnahmen."
         link="awd"
         class="min-w-[350px] shrink-0"
       />
       <ImageCard
-        image="/images/hero-stage.jpeg"
+        image="/images/services/markenstrategie-umsetzung.png"
         title="Markenstrategie-Umsetzung"
         description="Konsistente und kohärente Führung der Marke über alle Kanäle hinweg, sowohl verbal als auch visuell, entlang des Kundenerlebnisses. <br><br>"
         link="awd"

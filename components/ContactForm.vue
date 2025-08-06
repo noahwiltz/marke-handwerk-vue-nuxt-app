@@ -97,7 +97,7 @@ const senden = async () => {
         class="sm:w-1/2 w-full flex flex-col items-center [background-color:#EFEFEF] rounded-r-md p-20 pt-18"
       >
         <div
-          class="w-full max-w-[400px] sm:h-[400px] h-[330px] bg-cover bg-center rounded"
+          class="w-full max-w-[400px] sm:h-[400px] h-[400px] bg-cover bg-center rounded"
           style="background-image: url('/images/about-me.jpeg')"
         ></div>
         <div class="flex flex-col jusitfy-center items-center mt-10">

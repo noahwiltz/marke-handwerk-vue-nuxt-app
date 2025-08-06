@@ -74,7 +74,7 @@ const menuOpen = ref(false);
   </div>
 
   <!-- Mobile Dropdown -->
-  <transition name="fade">
+  <transition name="fade" class="z-50">
     <div
       v-if="menuOpen"
       class="absolute w-full h-full [background-color:#1D341A]/90 text-white flex flex-col items-center justify-start space-y-4 top-0 pt-30 md:hidden transition-all ease-in-out delay-300"
