@@ -12,7 +12,7 @@
       zu vereinbaren.
     </p>
     <NuxtLink
-      to="/#contact"
+      to="/#kontakt"
       class="text-white sm:text-xl text-base font-medium [background-color:#1D341A] rounded px-5 py-2 mt-8"
       >Termin vereinbaren
     </NuxtLink>

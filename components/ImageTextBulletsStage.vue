@@ -11,7 +11,7 @@ defineProps({
   <div class="mb-10" id="ueber-mich"></div>
   <div class="flex px-10 mt-30" id="image-text-bullets-container">
     <div
-      class="sm:w-1/2 w-full sm:h-210 h-100 bg-cover bg-center rounded-lg"
+      class="sm:w-1/2 w-full sm:h-230 h-100 bg-cover bg-center rounded-lg"
       style="background-image: url('/images/about-me.jpeg')"
     ></div>
     <div class="sm:w-1/2 w-full sm:p-18 p-10">

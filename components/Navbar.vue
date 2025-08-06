@@ -5,12 +5,14 @@ const menuOpen = ref(false);
 </script>
 
 <template>
-  <div class="flex absolute w-full">
-    <img
-      class="sm:w-auto w-35 lg:ms-25 m-0 z-100"
-      src="/marke-handwerk-logo.svg"
-      alt="Logo"
-    />
+  <div class="flex absolute w-full z-90">
+    <NuxtLink class="z-90" to="/">
+      <img
+        class="min-w-[150px] sm:w-auto w-35 lg:ms-25 m-0 z-90"
+        src="/marke-handwerk-logo.svg"
+        alt="Logo"
+      />
+    </NuxtLink>
     <nav
       class="flex relative w-full h-26 items-center space-x-20 bg-black/30 sm:px-25 px-10"
     >
@@ -53,6 +55,7 @@ const menuOpen = ref(false);
       <button
         class="absolute focus:outline-none sm:right-25 right-10 z-100"
         @click="menuOpen = !menuOpen"
+        id="burger-menu"
       >
         <svg
           class="w-8 h-8 [color:#1D341A]"
@@ -101,10 +104,8 @@ const menuOpen = ref(false);
 </template>
 
 <style>
-@media screen and (max-width: 1600px) {
-  #nav-desktop {
-    display: none;
-  }
+#burger-menu {
+  display: none;
 }
 
 .fade-enter-active,
@@ -120,5 +121,14 @@ const menuOpen = ref(false);
 .fade-leave-from {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1550px) {
+  #nav-desktop {
+    display: none;
+  }
+  #burger-menu {
+    display: flex;
+  }
 }
 </style>

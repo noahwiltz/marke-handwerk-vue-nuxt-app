@@ -1,7 +1,36 @@
 <script setup>
 import { ref } from "vue";
+import InputField from "@/components/InputField.vue";
 
+const firma = ref("");
+const vorname = ref("");
+const nachname = ref("");
+const telefon = ref("");
+const email = ref("");
 const position = ref("");
+
+const senden = async () => {
+  try {
+    const response = await fetch("/send.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams({
+        name: `${vorname.value} ${nachname.value}`,
+        email: email.value,
+        telefon: telefon.value,
+        position: position.value,
+        firma: firma.value,
+      }),
+    });
+
+    const data = await response.json();
+    alert(data.message);
+  } catch (err) {
+    alert("Fehler beim Senden.");
+  }
+};
 </script>
 
 <template>
@@ -11,7 +40,7 @@ const position = ref("");
     subTitle="Treten Sie mit mir in Kontakt für ein unverbindliches Kennenlernen!"
     description="Ich melde mich schnellstmöglich bei Ihnen zurück und wir schauen gemeinsam welche Leistungen für Sie in Frage kommen."
   />
-  <form>
+  <form @submit.prevent="senden">
     <div class="flex sm:p-25 p-0 pt-18" id="form-container">
       <div
         class="w-full lg:w-1/2 [background-color:#1D341A] bg-ci-primary rounded-l-md sm:p-18 p-10 pb-20"
@@ -19,14 +48,19 @@ const position = ref("");
         <p class="sm:text-2xl text-xl text-white font-medium mb-2">
           Geben Sie mir <span class="font-semibold">Ihre Kontaktdaten:</span>
         </p>
-        <InputField title="Firmenname" required />
+        <InputField v-model="firma" title="Firmenname" required />
         <div class="flex gap-x-3">
-          <InputField title="Vorname" width="w-1/2" />
-          <InputField title="Nachname" width="w-1/2" required />
+          <InputField v-model="vorname" title="Vorname" width="w-1/2" />
+          <InputField
+            v-model="nachname"
+            title="Nachname"
+            width="w-1/2"
+            required
+          />
         </div>
         <select
           v-model="position"
-          class="w-full text-gray-400 placeholder:text-white placeholder:opacity-30 focus-visible:outline-gray-300 focus-visible:outline-1 [background-color:#142412] rounded p-3 mt-3"
+          class="w-full h-12 text-gray-400 placeholder:text-white placeholder:opacity-30 focus-visible:outline-gray-300 focus-visible:outline-1 [background-color:#142412] rounded p-3 mt-3"
           id="company"
         >
           <option value="" hidden>Position Im Unternehmen</option>
@@ -35,6 +69,7 @@ const position = ref("");
           </option>
           <option value="Geschäftsführer">Geschäftsführer</option>
           <option value="Inhaber">Inhaber</option>
+          <option value="Inhaber">Mitarbeiter</option>
         </select>
         <!--p class="text-2xl text-white font-medium mt-5 mb-2">
           <span class="font-semibold">Wann </span>kann ich Sie am besten
@@ -42,11 +77,16 @@ const position = ref("");
         </p>
         <InputField title="Wähle einen Tag und die passende Uhrzeit aus" /-->
         <p class="sm:text-2xl text-xl text-white font-medium mt-5 mb-2">
-          <span class="font-semibold">Wie </span>kann ich Dich am besten
+          <span class="font-semibold">Wie </span>kann ich Sie am besten
           erreichen?
         </p>
-        <InputField title="Telefonnummer" type="tel" />
-        <InputField title="Deine E-Mail-Adresse" type="email" required />
+        <InputField v-model="telefon" title="Telefonnummer" type="tel" />
+        <InputField
+          v-model="email"
+          title="Ihre E-Mail-Adresse"
+          type="email"
+          required
+        />
         <input
           type="submit"
           value="Anfrage absenden"
@@ -63,7 +103,7 @@ const position = ref("");
         <div class="flex flex-col jusitfy-center items-center mt-10">
           <p class="sm:text-2xl text-xl font-semibold">Yannick Zabywalski</p>
           <p class="sm:text-xl text-lg font-normal">Ihr Ansprechpartner</p>
-          <div class="ms-15">
+          <div class="sm:ms-15 ms-5">
             <div class="flex items-center mt-10">
               <div class="[background-color:#1D341A] rounded sm:p-3 p-2">
                 <img class="w-5" src="/icons/call-icon.svg" alt="Call icon" />
@@ -74,7 +114,7 @@ const position = ref("");
             </div>
             <div class="flex items-center mt-5">
               <div class="[background-color:#1D341A] rounded sm:p-3 p-2">
-                <img class="w-5" src="/icons/call-icon.svg" alt="Call icon" />
+                <img class="w-5" src="/icons/mail-icon.svg" alt="Call icon" />
               </div>
               <a class="text-base mx-4" href="mailto:info@marke-handwerk.de"
                 >info@marke-handwerk.de</a

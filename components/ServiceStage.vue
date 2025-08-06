@@ -42,21 +42,27 @@ onMounted(() => {
     <TitleDivider
       title="Meine Leistungen"
       subTitle="Mit meiner Dienstleistung zu nachhaltigem Markenerfolg."
-      description="Wir schauen uns die Substanz für Deine Marke gemeinsam an.<br> Das verschafft mir einen Überblick darüber, wo ich ansetzen kann."
+      description="Wir schauen uns die Substanz für Ihre Marke gemeinsam an.<br> Das verschafft mir einen Überblick darüber, wo ich ansetzen kann."
     />
-
+    <div class="relative w-fit group mx-auto mt-10 2xl:hidden">
+      <div
+        class="text-md font-semibold [color:#1D341A] group-hover:opacity-100 opacity-90 transition-opacity duration-300"
+      >
+        - Zum Swipen wischen -
+      </div>
+    </div>
     <div class="flex gap-3 mt-18 overflow-x-auto cursor-grab" ref="sliderRef">
       <ImageCard
         image="/images/hero-stage.jpeg"
         title="Marken-Check-Up"
-        description="Vermittlung eines generellen und korrekten Markenverständnisses. Beispiele für erfolgreiche Marken im Handwerk. <br><br>"
+        description="<br>Vermittlung eines generellen und korrekten Markenverständnisses. Beispiele für erfolgreiche Marken im Handwerk. <br><br>"
         link="awd"
         class="min-w-[350px] shrink-0"
       />
       <ImageCard
         image="/images/hero-stage.jpeg"
         title="Markenstrategie-Entwicklung"
-        description="Entwicklung von Brand Touchpoints. Festlegung von Markenkontaktpunkten und KPI's zur Markenerfolgsmessung. <br><br>"
+        description="<li>Brand Touchpoints / Markenkontaktpunkte</li><li>Markenkern</li><li>Markenwerte</li><li>Markenpersönlichkeit</li><br>Entwicklung von Markenkontaktpunkten an denen Kunden mit Ihrer Marke in Berührung kommen können und sollen. Ableitung von Markenkern, werten und persönlichkeit. Sowie die Festlegung von Kennzahlen zur späteren Markenerfolgsmessung"
         link="awd"
         class="min-w-[350px] shrink-0"
       />
@@ -69,8 +75,8 @@ onMounted(() => {
       />
       <ImageCard
         image="/images/hero-stage.jpeg"
-        title="Markenführung"
-        description="Umsetzung der Markenstrategie. Führung der Marke an allen Brand Touchpoints entlang der Customer Journey. <br><br>"
+        title="Markenstrategie-Umsetzung"
+        description="Konsistente und kohärente Führung der Marke über alle Kanäle hinweg, sowohl verbal als auch visuell, entlang des Kundenerlebnisses. <br><br>"
         link="awd"
         class="min-w-[350px] shrink-0"
       />

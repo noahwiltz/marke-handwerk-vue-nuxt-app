@@ -21,9 +21,10 @@ defineProps({
         class="sm:w-12 w-5 h-fit [background-color:#1D341A] sm:p-1 p-0.5 mx-5"
       ></div>
     </div>
-    <h3 class="xl:text-3xl md:text-2xl text-base text-center mx-5 mt-3">
-      {{ subTitle }}
-    </h3>
+    <h3
+      class="xl:text-3xl md:text-2xl text-base text-center mx-5 mt-3"
+      v-html="subTitle"
+    ></h3>
     <p
       v-html="description"
       class="max-w-3xl sm:text-xl text-base font-extralight text-center mx-5 mt-5"

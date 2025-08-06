@@ -8,13 +8,13 @@ defineProps({
 </script>
 
 <template>
-  <div class="hover:scale-95 duration-300 ease-in-out">
+  <div class="hover:scale-95 duration-300 ease-in-out m-auto">
     <div
       class="sm:max-w-[430px] max-w-[330px] sm:h-[300px] h-[200px] bg-cover bg-center rounded"
       :style="`background-image: url('${image}')`"
     ></div>
     <div
-      class="sm:max-w-[430px] max-w-[330px] flex flex-col justify-center items-center [background-color:#EFEFEF] rounded-br rounded-b pt-10 px-8 pb-12"
+      class="sm:max-w-[430px] max-w-[330px] h-[650px] flex flex-col justify-start items-center [background-color:#EFEFEF] rounded-br rounded-b pt-10 px-8 pb-12"
     >
       <h2 class="sm:text-2xl text-xl font-medium text-center">{{ title }}</h2>
       <p
@@ -27,13 +27,6 @@ defineProps({
         :href="link"
         >Mehr erfahren</a
   -->
-      <div class="relative w-fit group mx-auto mt-10">
-        <div
-          class="text-sm text-gray-500 group-hover:opacity-100 opacity-70 transition-opacity duration-300"
-        >
-          ↔️ Zum Swipen wischen
-        </div>
-      </div>
     </div>
   </div>
 </template>
