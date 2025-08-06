@@ -45,7 +45,7 @@ const menuOpen = ref(false);
             >+49 173 / 7943151</a
           >
           <NuxtLink
-            to="/#contact"
+            to="/#kontakt"
             class="text-white uppercase [background-color:#1D341A] rounded p-3"
             >Kontakt
           </NuxtLink>
