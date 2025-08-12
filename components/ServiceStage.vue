@@ -62,7 +62,7 @@ onMounted(() => {
       <ImageCard
         image="/images/services/markenstrategie-entwicklung.png"
         title="Markenstrategie-Entwicklung"
-        description="<li>Brand Touchpoints / Markenkontaktpunkte</li><li>Markenkern</li><li>Markenwerte</li><li>Markenpersönlichkeit</li><br>Entwicklung von Markenkontaktpunkten an denen Kunden mit Ihrer Marke in Berührung kommen können und sollen. Ableitung von Markenkern, werten und persönlichkeit. Sowie die Festlegung von Kennzahlen zur späteren Markenerfolgsmessung"
+        description="<li>Brand Touchpoints / Markenkontaktpunkte</li><li>Markenkern</li><li>Markenwerte</li><li>Markenpersönlichkeit</li><br>Entwicklung von Markenkontaktpunkten an denen Kunden mit Ihrer Marke in Berührung kommen können und sollen. Ableitung von Markenkern, Werten und Persönlichkeit. Sowie die Festlegung von Kennzahlen zur späteren Markenerfolgsmessung"
         link="awd"
         class="min-w-[350px] shrink-0"
       />
