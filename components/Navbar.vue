@@ -23,17 +23,17 @@ const menuOpen = ref(false);
           >Startseite
         </NuxtLink>
         <NuxtLink
-          to="/"
+          to="/#markenversprechen"
           class="text-lg text-white hover:underline duration-300 ease-in-out"
           >Markenversprechen
         </NuxtLink>
         <NuxtLink
-          to="/"
+          to="/#ueber-mich"
           class="text-lg text-white hover:underline duration-300 ease-in-out"
           >Über mich
         </NuxtLink>
         <NuxtLink
-          to="/"
+          to="/#leistungen"
           class="text-lg text-white hover:underline duration-300 ease-in-out"
           >Leistungen
         </NuxtLink>
