@@ -13,7 +13,9 @@ defineProps({
     <div class="[background-color:#1D341A] rounded sm:p-6 p-4">
       <img class="sm:w-6 w-5 fill-black" :src="img" />
     </div>
-    <h2 class="sm:text-2xl text-xl font-medium mt-8">{{ title }}</h2>
+    <h2 class="sm:text-2xl text-xl font-medium text-center mt-8">
+      {{ title }}
+    </h2>
     <p
       v-html="description"
       class="text-center sm:text-xl text-base font-extralight mt-5"
