@@ -32,11 +32,33 @@ const menuOpen = ref(false);
           class="text-lg text-white hover:underline duration-300 ease-in-out"
           >Über mich
         </NuxtLink>
-        <NuxtLink
-          to="/#leistungen"
-          class="text-lg text-white hover:underline duration-300 ease-in-out"
-          >Leistungen
-        </NuxtLink>
+        <!-- Leistungen mit Hover-Dropdown -->
+        <div class="relative group inline-block">
+          <!-- Trigger -->
+          <NuxtLink
+            to="/#leistungen"
+            class="text-lg text-white hover:underline duration-300 ease-in-out"
+          >
+            Leistungen
+          </NuxtLink>
+
+          <!-- Dropdown -->
+          <div
+            class="absolute left-0 top-full mt-2 min-w-[220px] rounded-lg [background-color:#1D341A] shadow-lg overflow-hidden opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-opacity transition-transform duration-150 pointer-events-auto"
+          >
+            <NuxtLink
+              to="/differenzierung"
+              class="block px-4 py-2 text-white hover:[background-color:#1D341A] duration-200"
+            >
+              Differenzierung
+            </NuxtLink>
+            <!-- weitere Unterpunkte möglich
+    <NuxtLink to="/beratung" class="block px-4 py-2 text-white hover:bg-black/70 duration-200">
+      Beratung
+    </NuxtLink>
+    -->
+          </div>
+        </div>
         <div class="absolute right-25 flex items-center">
           <div class="[background-color:#1D341A] rounded p-3">
             <img src="/icons/call-icon.svg" alt="Call icon" />
@@ -77,7 +99,7 @@ const menuOpen = ref(false);
   <transition name="fade" class="z-50">
     <div
       v-if="menuOpen"
-      class="absolute w-full h-full [background-color:#1D341A]/90 text-white flex flex-col items-center justify-start space-y-4 top-0 pt-30 md:hidden transition-all ease-in-out delay-300"
+      class="absolute w-full h-full [background-color:#1D341A]/90 text-white flex flex-col items-center justify-start space-y-4 top-0 pt-50 md:hidden transition-all ease-in-out delay-300"
     >
       <NuxtLink to="/" @click="menuOpen = false">Startseite</NuxtLink>
       <NuxtLink to="/#markenversprechen" @click="menuOpen = false"
@@ -86,6 +108,9 @@ const menuOpen = ref(false);
       <NuxtLink to="/#ueber-mich" @click="menuOpen = false">Über mich</NuxtLink>
       <NuxtLink to="/#leistungen" @click="menuOpen = false"
         >Leistungen</NuxtLink
+      >
+      <NuxtLink to="/differenzierung" @click="menuOpen = false"
+        >Differenzierung</NuxtLink
       >
       <div class="flex items-center space-x-3 mt-4">
         <div class="bg-ci-primary rounded p-2">
